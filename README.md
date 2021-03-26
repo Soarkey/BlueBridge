@@ -7,6 +7,25 @@
 图解：https://www.jianshu.com/p/e136ec79235c
 
 ## 2. 面试题
+### 2021.3.26
+Shopee 2021秋招部分笔试题汇总
+https://www.nowcoder.com/test/28761331/summary
+
+- 罗马数字转整数
+- 字符串命名转换
+- 字符串算术运算, `"3*[a2*[c]]" -> "accaccacc"`, 栈+队列
+- 查找二叉搜索树的叶子节点, 递归
+- 有效的括号字符串, 同leetcode题[678. 有效的括号字符串](https://leetcode-cn.com/problems/valid-parenthesis-string/)
+- 以组为单位翻转单向链表, 头插法翻转
+
+### 2021.3.25
+vivo2021届秋季校招在线编程
+https://www.nowcoder.com/test/29582167/summary
+
+- 编译依赖问题, 拓扑排序
+- 回文字符串, 暴力
+- 游戏地图路径, dfs/bfs/A* (代码待完善)
+
 ### 2021.3.24
 上海耀乘健康科技有限公司笔试
 https://www.nowcoder.com/discuss/622867

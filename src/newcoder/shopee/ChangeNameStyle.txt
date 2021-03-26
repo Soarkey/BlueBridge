@@ -1,0 +1,4 @@
+PascalCaseTest
+Demo
+XuuuuuTY
+camel-case-test
