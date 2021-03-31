@@ -7,6 +7,10 @@
 图解：https://www.jianshu.com/p/e136ec79235c
 
 ## 2. 面试题
+### 2021.3.31
+兴业数金Java校园招聘笔试试卷(cibfintech)
+https://www.nowcoder.com/discuss/628837
+
 ### 2021.3.26
 Shopee 2021秋招部分笔试题汇总
 https://www.nowcoder.com/test/28761331/summary
