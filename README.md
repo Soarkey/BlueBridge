@@ -7,6 +7,10 @@
 图解：https://www.jianshu.com/p/e136ec79235c
 
 ## 2. 面试题
+### 2021.03.31 
+华为校园招聘软件笔试题
+https://www.nowcoder.com/discuss/629376
+
 ### 2021.3.31
 兴业数金Java校园招聘笔试试卷(cibfintech)
 https://www.nowcoder.com/discuss/628837
