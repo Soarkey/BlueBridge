@@ -46,7 +46,12 @@ public class HatNumber {
                         map.put(t, map.get(t) - 1);
                     }
                 } else {
-                    map.put(t, t - 1);
+                    if(t == 1){
+                        // cover有人报的帽子数量为0的情况
+                        totalHat += 1;
+                    } else {
+                        map.put(t, t - 1);
+                    }
                 }
             }
             for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
