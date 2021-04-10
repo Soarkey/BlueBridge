@@ -7,6 +7,13 @@
 图解：https://www.jianshu.com/p/e136ec79235c
 
 ## 2. 面试题
+### 2021.4.10
+英礡Improbable笔试题 (2021 Improbable Intern Online Test)
+https://www.nowcoder.com/discuss/637009
+
+- 括号匹配
+- 约瑟夫环
+
 ### 2021.03.31 
 华为校园招聘软件笔试题
 https://www.nowcoder.com/discuss/629376
@@ -14,6 +21,10 @@ https://www.nowcoder.com/discuss/629376
 ### 2021.3.31
 兴业数金Java校园招聘笔试试卷(cibfintech)
 https://www.nowcoder.com/discuss/628837
+
+### 2021.3.29
+网易2021校招笔试-Java开发工程师（正式第二批）
+https://www.nowcoder.com/test/27977161/summary
 
 ### 2021.3.26
 Shopee 2021秋招部分笔试题汇总
