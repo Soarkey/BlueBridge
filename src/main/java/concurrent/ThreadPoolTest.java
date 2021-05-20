@@ -11,23 +11,6 @@ import java.util.concurrent.*;
  * @date 2021/5/10
  */
 public class ThreadPoolTest {
-    static class MyThread implements Callable<Integer> {
-        @Getter
-        private CountDownLatch countDownLatch;
-
-        public MyThread(CountDownLatch countDownLatch) {
-            this.countDownLatch = countDownLatch;
-        }
-
-        @Override
-        public Integer call() throws Exception {
-            System.out.println(Thread.currentThread().getName() + " 线程处理数据");
-            Thread.sleep(3000);
-            this.countDownLatch.countDown();
-            return 100;
-        }
-    }
-
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         // testExecutors();
         testMyThreadPool();
@@ -89,5 +72,22 @@ public class ThreadPoolTest {
             result += futureTasks[i].get(); // 会阻塞
         }
         System.out.println("返回值：" + result);
+    }
+
+    static class MyThread implements Callable<Integer> {
+        @Getter
+        private final CountDownLatch countDownLatch;
+
+        public MyThread(CountDownLatch countDownLatch) {
+            this.countDownLatch = countDownLatch;
+        }
+
+        @Override
+        public Integer call() throws Exception {
+            System.out.println(Thread.currentThread().getName() + " 线程处理数据");
+            Thread.sleep(3000);
+            this.countDownLatch.countDown();
+            return 100;
+        }
     }
 }

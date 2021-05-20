@@ -5,6 +5,17 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
+// 枚举实现单例
+enum EasySingleton {
+    INSTANCE
+    // private int k = 0;
+    // EasySingleton(){
+    //     System.out.println("初始化");
+    //     ++k;
+    //     System.out.println(k);
+    // }
+}
+
 /**
  * Singleton class
  *
@@ -50,33 +61,8 @@ class Singleton {
     }
 }
 
-// 枚举实现单例
-enum EasySingleton {
-    INSTANCE;
-    // private int k = 0;
-    // EasySingleton(){
-    //     System.out.println("初始化");
-    //     ++k;
-    //     System.out.println(k);
-    // }
-}
-
-
 public class SingletonDemo {
     static final AtomicInteger times = new AtomicInteger(0);
-
-    static class MyTask implements Runnable {
-        @Override
-        public void run() {
-            int t = SingletonDemo.times.getAndIncrement();
-            // Singleton instance = Singleton.getInstance();
-            // System.out.println(Thread.currentThread().getName() + " : " + instance + ", t=" + t);
-
-            // 枚举实现单例
-            EasySingleton instance = EasySingleton.INSTANCE;
-            System.out.println(Thread.currentThread().getName() + " : " + System.identityHashCode(instance) + ", t=" + t);
-        }
-    }
 
     public static void main(String[] args) throws InterruptedException {
         ThreadPoolExecutor pool = new ThreadPoolExecutor(100, 200, 10, TimeUnit.SECONDS, new ArrayBlockingQueue<Runnable>(50), new ThreadPoolExecutor.DiscardOldestPolicy());
@@ -89,5 +75,18 @@ public class SingletonDemo {
         pool.awaitTermination(Long.MAX_VALUE, TimeUnit.SECONDS);
 
         System.out.println(times);
+    }
+
+    static class MyTask implements Runnable {
+        @Override
+        public void run() {
+            int t = SingletonDemo.times.getAndIncrement();
+            // Singleton instance = Singleton.getInstance();
+            // System.out.println(Thread.currentThread().getName() + " : " + instance + ", t=" + t);
+
+            // 枚举实现单例
+            EasySingleton instance = EasySingleton.INSTANCE;
+            System.out.println(Thread.currentThread().getName() + " : " + System.identityHashCode(instance) + ", t=" + t);
+        }
     }
 }
