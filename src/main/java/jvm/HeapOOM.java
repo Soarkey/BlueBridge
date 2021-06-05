@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * HeapOOM class
- *
+ * -XX:+HeapDumpOnOutOfMemoryError
  * @author Soarkey
  * @date 2021/3/28
  */
