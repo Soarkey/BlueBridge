@@ -12,7 +12,7 @@ public class ReadSelf {
     public static void main(String args[]) {
         try {
             //open the file
-            FileInputStream fstream = new FileInputStream("E:\\学习资源汇总\\蓝桥\\code\\src\\other\\ReadSelf.java");
+            FileInputStream fstream = new FileInputStream(".\\ReadSelf.java");
             BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
             //read data line by line from the file
             String s;
