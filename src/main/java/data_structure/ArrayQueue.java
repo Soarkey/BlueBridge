@@ -48,6 +48,9 @@ public class ArrayQueue {
             tail = (tail + 1 + N) % N;
         }
 
+        // 求队列长度
+        System.out.println("队列长度:" + (tail - head + N) % N);
+
         while (head != tail) {
             System.out.print(queue[head] + ", ");
             head = (head + 1 + N) % N;
